@@ -14,12 +14,12 @@ func TestSortV1(t *testing.T) {
 		{
 			name:  "Sort ASC",
 			input: []int64{8, 9, 2, 3, 1},
-			want:  []int64{9, 8, 3, 2, 1},
+			want:  []int64{1, 2, 3, 8, 9},
 		},
 		{
 			name:  "Sort ASC 2",
 			input: []int64{8, 9, 2, 5, 3, 1},
-			want:  []int64{9, 8, 5, 3, 2, 1},
+			want:  []int64{1, 2, 3, 5, 8, 9},
 		},
 	}
 	for _, tt := range tests {
@@ -40,12 +40,12 @@ func TestSortV2(t *testing.T) {
 		{
 			name:  "Sort ASC",
 			input: []int64{8, 9, 2, 3, 1},
-			want:  []int64{9, 8, 3, 2, 1},
+			want:  []int64{1, 2, 3, 8, 9},
 		},
 		{
 			name:  "Sort ASC 2",
 			input: []int64{8, 9, 2, 5, 3, 1},
-			want:  []int64{9, 8, 5, 3, 2, 1},
+			want:  []int64{1, 2, 3, 5, 8, 9},
 		},
 	}
 	for _, tt := range tests {
