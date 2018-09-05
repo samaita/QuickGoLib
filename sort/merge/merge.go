@@ -1,14 +1,15 @@
 package merge
 
-import (
-	"fmt"
-)
+/*
+EXAMPLE USAGE
 
 func main() {
+	// Example input
 	input := []int64{5, 6, 3, 7, 4, 9, 8, 1, 11, 3, 4, 2, 9, 10, 7, 1}
 	fmt.Println("Result V1", SortV1(input))
 	fmt.Println("Result V2", SortV2(input))
 }
+*/
 
 // SortV1 : Do a merge sort algorithm (or so i thought)
 func SortV1(arr []int64) []int64 {
