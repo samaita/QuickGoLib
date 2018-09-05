@@ -35,7 +35,7 @@ func mergeV1(l []int64, r []int64) []int64 {
 
 	for j := 0; j < len(l); j++ {
 		for i := 0; i < len(r); i++ {
-			if l[j] <= r[i] {
+			if l[j] >= r[i] {
 				l[j], r[i] = r[i], l[j]
 			}
 		}
@@ -82,7 +82,7 @@ func mergeV2(l []int64, r []int64) []int64 {
 			continue
 		}
 
-		if l[iL] <= r[iR] { // left smaller?
+		if l[iL] >= r[iR] { // right smaller?
 			result = append(result, r[iR]) // append current Right
 			iR++                           // shift Right position
 		} else {
